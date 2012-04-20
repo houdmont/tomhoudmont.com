@@ -1,0 +1,21 @@
+/* the humans responsible & colophon */
+/* humanstxt.org */
+
+/* TEAM */
+  Lead Web Developer: Tom Houdmont
+  Site: http://tomhoudmont.com
+  Twitter: @houdmont
+  Location: 
+
+/* THANKS */
+  Names (& URL): 
+  h5b (http://html5boilerplate.com), 
+  GitHub (http://github.com), 
+  Bootstrap (http://twitter.github.com/bootstrap/index.html),
+  jQuery (http://jquery.com),
+
+
+/* SITE */
+  Standards: HTML5, CSS3
+  Components: Modernizr, jQuery
+  Software: 

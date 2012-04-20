@@ -22,14 +22,12 @@ class Home extends CI_Controller {
 	 * map to /index.php/welcome/<method_name>
 	 * @see http://codeigniter.com/user_guide/general/urls.html
 	 */
-	public function index()
-	{
-		$this->load->view('home_view');
-		//$this->load->view('templates/page_view', $data);
-	}
 
-	public function test() {
-		$data['header'] = array('title' => 'Blue bar title');
+	public function index() {
+
+		$data['header'] = array();
+		$data['header']['title'] = 'Home page';
+		$data['path'] = ENVIRONMENT === 'development' ? '/site/' : '';
 
 		$this->load->view('templates/page_view', $data);
 	}

@@ -5,13 +5,25 @@ class Home extends CI_Controller {
 
 	public function __construct() {
 		parent::__construct();
-		
+
+		$this->data = array();
+		$this->data['header'] = array();
+		$this->data['header']['title'] = 'Home page';
+		$this->data['content'] = $this->load->view('homepage_view', '', true);
+
+
+		if(ENVIRONMENT === 'production') {
+			$this->output->cache(5);
+		}
+		if(ENVIRONMENT === 'development') {
+			//$this->output->enable_profiler(TRUE);
+		}
 	}
 	/**
 	 * Index Page for this controller.
 	 *
 	 * Maps to the following URL
-	 * 		http://example.com/index.php/welcome
+	 * 		http://example.com/index.php/home
 	 *	- or -  
 	 * 		http://example.com/index.php/welcome/index
 	 *	- or -
@@ -24,12 +36,13 @@ class Home extends CI_Controller {
 	 */
 
 	public function index() {
+		
+		$this->twitter->set_api('search');
+		$this->twitter->set_setting('q', 'from:houdmont');
 
-		$data['header'] = array();
-		$data['header']['title'] = 'Home page';
-		$data['path'] = ENVIRONMENT === 'development' ? '/site/' : '';
+		$this->data['twitter'] = $this->twitter->search();
 
-		$this->load->view('templates/page_view', $data);
+		$this->load->view('templates/layout', $this->data);
 	}
 }
 

@@ -7,29 +7,39 @@
 <!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
 <head>
   <meta charset="utf-8">
-
-  <!-- Use the .htaccess and remove these lines to avoid edge case issues.
-       More info: h5bp.com/i/378 -->
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-
   <title><?php echo $header['title']; ?></title>
   <meta name="description" content="">
-
   <!-- Mobile viewport optimized: h5bp.com/viewport -->
   <meta name="viewport" content="width=device-width">
-
-  <!-- Place favicon.ico and apple-touch-icon.png in the root directory: mathiasbynens.be/notes/touch-icons -->
-
-  <link rel="stylesheet" href="<?php echo $path; ?>css/style.css">
+  <!-- Kills the IE6 image toolbar popup -->
+  <meta http-equiv="imagetoolbar" content="false" />
+  <!-- Ensures the devices display responsive pages properly -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- IE9 pinned page settings -->
+  <meta name="application-name" content="Tomhoudmont.com" />
+  <meta name="msapplication-starturl" content="http://tomhoudmont.com" />
+  <!-- A couple of the most basic Facebook open graph tags -->
+  <meta property="og:title" content="tomhoudmont.com" />
+  <meta property="og:description" content="The personal website of Tom Houdmont" />
+<?php
+  //@TODO
+  //<!-- Canonical URLs -->
+  //<link rel="canonical" href="" />
+?>
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="<?php echo ENV_PATH; ?>favicon.ico">
+  <!-- Humans.txt -->
+  <link rel="author" href="<?php echo ENV_PATH; ?>humans.txt" />
+  <!-- Stylesheets and Fonts -->
+  <link rel="stylesheet" href="<?php echo ENV_PATH; ?>css/bootstrap.css">
+  <link rel="stylesheet" href="<?php echo ENV_PATH; ?>css/style.css">
+  <link rel="stylesheet" href="<?php echo ENV_PATH; ?>css/bootstrap-responsive.css">
+  <link href='http://fonts.googleapis.com/css?family=Cabin|Lobster' rel='stylesheet' type='text/css'>
 
   <!-- More ideas for your <head> here: h5bp.com/d/head-Tips -->
-
-  <!-- All JavaScript at the bottom, except this Modernizr build.
-       Modernizr enables HTML5 elements & feature detects for optimal performance.
-       Create your own custom Modernizr build: www.modernizr.com/download/ -->
-  <script src="js/vendor/modernizr-2.5.3.min.js"></script>
+  <script src="<?php echo ENV_PATH; ?>js/vendor/modernizr-2.5.3.min.js"></script>
 </head>
 <body>
-  <!-- Prompt IE 6 users to install Chrome Frame. Remove this if you support IE 6.
-       chromium.org/developers/how-tos/chrome-frame-getting-started -->
   <!--[if lt IE 7]><p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
+
+  <div class="container">

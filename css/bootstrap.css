@@ -399,11 +399,13 @@ h6 {
 }
 .page-header {
   padding-bottom: 17px;
-  margin: 18px 0;
+  margin: 18px 0 18px -20px;
   border-bottom: 1px solid #eeeeee;
 }
 .page-header h1 {
+  font-family: 'Lobster', serif;
   line-height: 1;
+  font-size: 35px;
 }
 ul,
 ol {
@@ -2472,7 +2474,7 @@ input[type="submit"].btn.btn-mini {
   margin-top: 5px;
 }
 .nav {
-  margin-left: 0;
+  margin-left: 0px;
   margin-bottom: 18px;
   list-style: none;
 }

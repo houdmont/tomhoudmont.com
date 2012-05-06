@@ -36,6 +36,20 @@ define('FOPEN_READ_WRITE_CREATE',				'a+b');
 define('FOPEN_WRITE_CREATE_STRICT',				'xb');
 define('FOPEN_READ_WRITE_CREATE_STRICT',		'x+b');
 
-
+/*
+|--------------------------------------------------------------------------
+| Environment dependent variables
+|--------------------------------------------------------------------------
+|
+| These are used to define the differences between the development and production environment
+|
+*/
+if(ENVIRONMENT === 'development') {
+	define('ENV_PATH', '/site/');
+	define('ENV_LINK_PATH', '/index.php');
+} else {
+	define('ENV_PATH', '/');
+	define('ENV_LINK_PATH', '');
+}
 /* End of file constants.php */
 /* Location: ./application/config/constants.php */

@@ -58,6 +58,12 @@
 .hidden-desktop {
   display: none;
 }
+
+/*  
+    |------------------------------
+    | Smartphones and Tablets (iPhone, iPad etc)
+    | -----------------------------
+*/
 @media (max-width: 767px) {
   .visible-phone {
     display: block;
@@ -72,6 +78,11 @@
     display: none;
   }
 }
+/*  
+    |------------------------------
+    | Portrait Tablets (iPad etc)
+    | -----------------------------
+*/
 @media (min-width: 768px) and (max-width: 979px) {
   .visible-tablet {
     display: block;
@@ -86,6 +97,11 @@
     display: none;
   }
 }
+/*  
+    |------------------------------
+    | Smartphones (iPhone etc) 
+    | -----------------------------
+*/
 @media (max-width: 480px) {
   .nav-collapse {
     -webkit-transform: translate3d(0, 0, 0);
@@ -132,7 +148,28 @@
   .carousel-caption {
     position: static;
   }
+
+  .header {
+    margin-top: 1em;
+  }
+
+  .twitter .twitter_img {
+    padding-left: 0;
+    text-align: center;
+  }
+  .twitter .twitter_img img {
+    width: 45px;
+  }
+
+  .twitter .twitter_text {
+    font-size: 12px;
+  }
 }
+/*  
+    |------------------------------
+    | Smartphones and Tablets (iPhone, iPad etc) 
+    | -----------------------------
+*/
 @media (max-width: 767px) {
   body {
     padding-left: 20px;
@@ -181,7 +218,26 @@
   .input-append input[class*="span"] {
     width: auto;
   }
+
+  .twitter .twitter_img {
+    padding-left: 0;
+    text-align: center;
+  }
+  .twitter .twitter_img img {
+    width: 45px;
+  }
+
+  .twitter .twitter_text {
+    font-size: 1em;
+    text-align: center;
+    margin-bottom: 1em;
+  }
 }
+/*  
+    |------------------------------
+    | Portrait Tablets (iPad)
+    | -----------------------------
+*/
 @media (min-width: 768px) and (max-width: 979px) {
   .row {
     margin-left: -20px;
@@ -373,6 +429,11 @@
     width: 32px;
   }
 }
+/*  
+    |------------------------------
+    | Portrait Tablets and below 
+    | -----------------------------
+*/
 @media (max-width: 979px) {
   body {
     padding-top: 0;
@@ -481,12 +542,23 @@
     height: 0;
   }
 }
+/*  
+    |------------------------------
+    | Default 
+    | -----------------------------
+*/
 @media (min-width: 980px) {
   .nav-collapse.collapse {
     height: auto !important;
     overflow: visible !important;
   }
 }
+/*  
+    |------------------------------
+    | Large Displays 
+    | -----------------------------
+*/
+/*
 @media (min-width: 1200px) {
   .row {
     margin-left: -30px;
@@ -581,6 +653,7 @@
   .offset1 {
     margin-left: 130px;
   }
+  
   .row-fluid {
     width: 100%;
     *zoom: 1;
@@ -683,4 +756,4 @@
   .thumbnails > li {
     margin-left: 30px;
   }
-}
+}*/

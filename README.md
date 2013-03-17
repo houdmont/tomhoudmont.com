@@ -1,6 +1,5 @@
-tomhoudmont.com
-===============
+A static website making use of the following:
 
-The tomhoudmont.com website, created using the following:
-
-Codeigniter PHP Framework.
+HTML5 Boilerplate 
+lettering.js
+fittext.js 

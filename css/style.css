@@ -215,32 +215,52 @@ td { vertical-align: top; }
 
 
 /* ==|== primary styles =====================================================
-   Author:
+   Author: Tom Houdmont
    ========================================================================== */
 
+body {
+  background-image: url(../img/subtle_grunge_@2X.png);
+}
 
+.container {
+  margin: 0 auto;
+  width: 90%;
+}
 
+h1 {
+  text-align: center;
+  margin-top: 0.35em;
+  font-family: 'Lobster Two', cursive;
+}
 
+h1 span {
+  display: inline-block;
+  position: relative;
+  -webkit-transition: top 0.25s;
+  -moz-transition: top 0.25s;
+  -o-transition: top 0.25s;
+  -ms-transition: top 0.25s;
+  transition: top 0.25s;
+}
 
+h1 .char4 {
+  width: 20px;
+}
 
+h1 .char1, h1 .char5 {
+  text-shadow: 1px 1px 2px gray;
+  font-size: 1.1em;
+}
 
+h1 span:hover {
+  top: 3px;
+}
 
-
-
-
-
-
-
-
-
-/* ==|== media queries ======================================================
-   EXAMPLE Media Query for Responsive Design.
-   This example overrides the primary ('mobile first') styles
-   Modify as content requires.
-   ========================================================================== */
-
-@media only screen and (min-width: 35em) {
-  /* Style adjustments for viewports that meet the condition */
+.intro {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+  font-family: 'Cabin', sans-serif;
 }
 
 

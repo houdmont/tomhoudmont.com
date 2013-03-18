@@ -42,8 +42,8 @@ body { margin: 0; font-size: 1em; line-height: 1.4; }
  * Also: hot pink! (or customize the background color to match your design)
  */
 
-::-moz-selection { background: #fe57a1; color: #fff; text-shadow: none; }
-::selection { background: #fe57a1; color: #fff; text-shadow: none; }
+::-moz-selection { background: #3299BB; color: #fff; text-shadow: none; }
+::selection { background: #3299BB; color: #fff; text-shadow: none; }
 
 
 /* =============================================================================
@@ -216,10 +216,18 @@ td { vertical-align: top; }
 
 /* ==|== primary styles =====================================================
    Author: Tom Houdmont
+
+   Palette:
+   #413E4A
+   #73626E
+   #F5634A
+   #ED303C
+   #3B8183
    ========================================================================== */
 
 body {
   background-image: url(../img/subtle_grunge_@2X.png);
+  color: #73626E;
 }
 
 .container {
@@ -230,7 +238,9 @@ body {
 h1 {
   text-align: center;
   margin-top: 0.35em;
-  font-family: 'Lobster Two', cursive;
+  font-family: 'Lobster', cursive;
+  color: #413E4A;
+  text-shadow: 1px 2px 2px #73626E;
 }
 
 h1 span {
@@ -243,17 +253,12 @@ h1 span {
   transition: top 0.25s;
 }
 
-h1 .char4 {
-  width: 20px;
-}
-
 h1 .char1, h1 .char5 {
-  text-shadow: 1px 1px 2px gray;
-  font-size: 1.1em;
+  font-size: 1.2em;
 }
 
 h1 span:hover {
-  top: 3px;
+  top: 3px !important;
 }
 
 .intro {
@@ -261,6 +266,31 @@ h1 span:hover {
   margin: 0 auto;
   text-align: center;
   font-family: 'Cabin', sans-serif;
+  font-size: 2em;
+}
+a, a:link, a:visited, a:hover {
+  color: #F5634A;
+  text-decoration: none;
+}
+
+a span, a:link span, a:visited span, a:hover span {
+  color: #F5634A;
+  text-shadow: 1px 1px 1px #ED303C;
+
+  -webkit-transition: color 0.25s, text-shadow 0.25s;
+  -moz-transition: color 0.25s, text-shadow 0.25s;
+  -o-transition: color 0.25s, text-shadow 0.25s;
+  -ms-transition: color 0.25s, text-shadow 0.25s;
+  transition: color 0.25s, text-shadow 0.25s;
+}
+
+a span:hover {
+  color: #ED303C;
+  text-shadow: 1px 1px 1px #F5634A;
+}
+
+a:active span {
+  text-shadow: none;
 }
 
 
